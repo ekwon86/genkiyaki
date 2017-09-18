@@ -1,0 +1,47 @@
+.top-navbar {
+  position: fixed;
+  height: 75px;
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.navbar-container {
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.navbar-genki-logo {
+  height: 50px;
+  width: 100%;
+}
+
+.link-container {
+  text-align: right;
+  position: relative;
+  top: 50%;
+  transform:translate(0,-50%);
+}
+
+.nav-margin {
+}
+
+.nav-links {
+  text-transform: uppercase;
+  color: #292929;
+  margin-left: 30px;
+  transition: 0.2s;
+}
+
+.nav-links:hover {
+  text-decoration: none;
+  color: red;
+}
+
+.nav-links:link {
+  text-decoration: none;
+}
+
+
