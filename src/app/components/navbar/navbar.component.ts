@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
     const section = '#' + event.target.innerHTML;
     $('html, body').animate({
       scrollTop: $(section).offset().top
-    }, 'fast');
+    }, 500);
   }
 
 }
