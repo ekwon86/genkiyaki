@@ -1,0 +1,72 @@
+.menu {
+  height: auto;
+  min-height: 100vh;
+  background:url('../../../assets/taco2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu * {
+  color: white;
+}
+
+.overlay {
+  min-height: 100vh;
+  height: auto;
+  background-color: rgba(0,0,0,0.75);
+  z-index: 100;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.menu-container {
+  border: 5px solid white;
+  height: 100%;
+  padding: 25px;
+}
+
+.menu-heading {
+  font-family: 'Stint Ultra Expanded', cursive;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  font-weight: bolder;
+  letter-spacing: 20px;
+  font-size: 2em;
+}
+
+.food-type-section {
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+
+.food-item-subcontainer {
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.food-type-heading {
+  font-family: 'Stint Ultra Expanded', cursive;
+  text-transform: uppercase;
+  color: White;
+  padding: 15px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+.food-item-container {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.food-item {
+  font-size: 1.25em;
+  margin: 0;
+}
+
+.food-price {
+  font-weight: bold;
+  color: red !important;
+}

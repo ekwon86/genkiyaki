@@ -8,11 +8,11 @@
       </div>
       <div class="col-10">
         <div class="link-container">
-          <a class="nav-links" routerLink="/" [routerLinkActive]="['active']">Home</a>
-          <a href="#" class="nav-links">About</a>
-          <a href="#" class="nav-links">Gallery</a>
+          <a class="nav-links" routerLink="/" (click)="smoothScroll($event)">Home</a>
+          <a class="nav-links" (click)="smoothScroll($event)">About</a>
+          <a class="nav-links" (click)="smoothScroll($event)">Gallery</a>
+          <a class="nav-links" (click)="smoothScroll($event)">Contact</a>
           <a class="nav-links" routerLink="/menu">Menu</a>
-          <a href="#" class="nav-links">Contact</a>
         </div>
       </div>
     </div>

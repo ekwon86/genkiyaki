@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import $ from 'jquery';
 
 @Component({
   selector: 'app-navbar',
@@ -12,7 +13,13 @@ export class NavbarComponent implements OnInit {
     private router: Router
   ) { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  smoothScroll(event) {
+    const section = '#' + event.target.innerHTML;
+    $('html, body').animate({
+      scrollTop: $(section).offset().top
+    }, 'fast');
   }
 
 }
