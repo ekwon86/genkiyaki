@@ -11,7 +11,6 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/home/about/about.component';
 import { GalleryComponent } from './components/home/gallery/gallery.component';
 import { ContactComponent } from './components/home/contact/contact.component';
-import { LightboxComponent } from './components/home/gallery/src/app/components/home/gallery/lightbox/lightbox.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +21,7 @@ import { LightboxComponent } from './components/home/gallery/src/app/components/
     HomeComponent,
     AboutComponent,
     GalleryComponent,
-    ContactComponent,
-    LightboxComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,
