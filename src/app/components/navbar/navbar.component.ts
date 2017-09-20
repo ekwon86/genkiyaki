@@ -9,6 +9,8 @@ import $ from 'jquery';
 })
 export class NavbarComponent implements OnInit {
 
+  insideMenu = false;
+
   constructor(
     private router: Router
   ) { }
@@ -22,4 +24,14 @@ export class NavbarComponent implements OnInit {
     }, 500);
   }
 
+  menuClicked() {
+    $('html, body').animate({
+      scrollTop: $('html, body').offset().top
+    }, 'fast');
+    this.insideMenu = true;
+  }
+
+  returnHome() {
+    this.insideMenu = false;
+  }
 }
