@@ -1,0 +1,48 @@
+#Gallery {
+  min-height: 800px;
+  height: auto;
+  background-image: url('../../../assets/taco2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+}
+.overlay {
+  min-height: 800px;
+  height: auto;
+  width: 100%;
+  background-color: rgba(0,0,0,0.65);
+  padding: 100px 0;
+}
+.gallery-heading {
+  font-family: 'Stint Ultra Expanded', cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.58);
+  padding-bottom: 15px;
+  color: white;
+  margin-bottom: 30px;
+}
+.picture-container {
+  border: 1px solid white;
+  padding: 0;
+  min-height: 300px;
+  height: auto;
+}
+.picture {
+  height: 300px;
+  border: 1px solid red;
+  padding: 0;
+  float: left;
+  margin: 0;
+}
+
+.picture-overlay {
+  height: 100%;
+  width: 100%;
+  transition: 0.2s;
+}
+.picture-overlay:hover {
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.3);
+}
