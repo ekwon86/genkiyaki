@@ -1,0 +1,63 @@
+#About {
+  min-height: 400px;
+  height: auto;
+  width: 100%;
+  background-color: #ce3012;
+  padding: 100px 0;
+}
+
+#About * {
+  color: white;
+}
+
+.about-heading {
+  font-family: 'Stint Ultra Expanded', cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.58);
+  padding-bottom: 15px;
+}
+
+.about-us-text {
+  line-height: 3em;
+  text-align: justify;
+}
+
+.about-us-picture-container {
+  padding: 0;
+}
+
+.david-pic {
+  width: 250px;
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  transform: translate(0,-50%) rotate(2deg);
+  z-index: 0;
+}
+
+.pic-1 {
+  position: absolute;
+  top: 0;
+  right: -35px;
+  transform: rotate(-3deg);
+  width: 225px;
+  z-index: 1;
+}
+
+.pic-2 {
+  position: absolute;
+  right: -90px;
+  top: 50%;
+  width: 235px;
+  z-index: 2;
+  transform: translate(0,-50%) rotate(10deg);
+}
+
+.pic-3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 225px;
+  transform: rotate(-5deg);
+}
