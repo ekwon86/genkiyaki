@@ -99,7 +99,6 @@
 
 .modal-pic-sub-container {
   height: 100%;
-  border: 1px solid red;
 }
 
 .gallery-images {
@@ -111,14 +110,21 @@
 
 .close-modal-container {
   width: 100%;
+  position: relative;
   height: 75px;
   text-align: right;
   padding-right: 15%;
 }
 
+.pic-counter-container {
+  width: 100%;
+  height: 75px;
+  text-align: center;
+}
+
 .gallery-pic-container {
   width: 70%;
-  height: 100%;
+  height: 80%;
   display: inline-block;
   vertical-align: top;
   text-align: center;
@@ -134,13 +140,26 @@
   transform: translate(0,-50%);
 }
 
+.gallery-pic::selection {
+  background-color: transparent;
+}
+
 .left-arrow-container, .right-arrow-container {
-  height: 100%;
+  height: 80%;
   width: 15%;
   vertical-align: top;
   display: inline-block;
   position: relative;
   font-size: 0;
+}
+
+.pic-counter-container p {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform:translate(0,-50%);
 }
 
 .left-right-arrows {

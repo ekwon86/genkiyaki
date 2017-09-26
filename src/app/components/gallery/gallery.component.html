@@ -27,6 +27,9 @@
         <div class="right-arrow-container">
           <i class="fa fa-chevron-right gallery-icons left-right-arrows" aria-hidden="true" (click)="rightArrowClicked()"></i>
         </div>
+        <div class="pic-counter-container">
+          <p style="color: white;">{{ currentIndex + 1 }} of {{ pictureArray.length }}</p>
+        </div>
     </div>
   </div>
   <!--------------------- GALLERY MODAL END ---------------------------->
