@@ -12,9 +12,11 @@ export class GalleryComponent implements OnInit {
     {url: '../../../assets/taco.jpg'},
     {url: '../../../assets/genkiinside.jpg'},
     {url: '../../../assets/fries.jpg'},
+    {url: '../../../assets/genkicombo.jpg'},
     {url: '../../../assets/zombieboard.jpg'},
     {url: '../../../assets/chxplate.jpg'},
     {url: '../../../assets/taco3.jpg'},
+    {url: '../../../assets/fries2.jpg'},
     {url: '../../../assets/assortment2.jpg'}
   ];
   showPictureModal = false;
@@ -33,11 +35,10 @@ export class GalleryComponent implements OnInit {
       this.pictureArray.push(
         {url: '../../../assets/taco4.jpg'},
         {url: '../../../assets/food.jpg'},
-        {url: '../../../assets/fries2.jpg'},
         {url: '../../../assets/zombiewall.jpg'},
+        {url: '../../../assets/genkiman.jpg'},
         {url: '../../../assets/bbqplate2.jpg'},
         {url: '../../../assets/porkplate.jpg'},
-        {url: '../../../assets/genkiman.jpg'},
         {url: '../../../assets/zombierules.jpg'});
 
     } else if (this.plusClickCount === 2) {
@@ -45,7 +46,6 @@ export class GalleryComponent implements OnInit {
         {url: '../../../assets/bbqplate.jpg'},
         {url: '../../../assets/fries3.jpg'},
         {url: '../../../assets/taco2.jpg'},
-        {url: '../../../assets/genkicombo.jpg'},
         {url: '../../../assets/taco5.jpg'},
         {url: '../../../assets/bbqplate3.jpg'},
         {url: '../../../assets/combo.jpg'},

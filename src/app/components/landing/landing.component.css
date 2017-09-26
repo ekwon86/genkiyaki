@@ -26,6 +26,7 @@
 .banner-container {
   position: relative;
   top: 50%;
+  height: 500px;
   transform: translate(0,-50%);
 }
 
@@ -38,5 +39,5 @@
 }
 
 #genki-logo {
-  height: 400px;
+  height: 100%;
 }

@@ -1,9 +1,8 @@
-#Contact {
-  height: 800px;
+#Location {
+  height: 400px;
   width: 100vw;
   position: relative;
-  padding-top: 100px;
-  background-color: #292929;
+  background-color: white;
 }
 
 #map {
@@ -28,7 +27,9 @@
 .contact-master-container {
   font-size: 0;
   width: 100%;
-  height: 500px;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 .contact-containers {
@@ -36,5 +37,44 @@
   display: inline-block;
   height: 100%;
   width: 50%;
+  position: relative;
+  vertical-align: top;
+}
+
+.contact-info {
+  background-color: #292929;
+  padding: 0 0 0 5%;
+}
+
+.contact-info-container {
+  height: 100%;
+  padding: 25px;
+}
+
+.map-container {
+  background-color: white;
+}
+
+.contact-info:after {
+  border-right: 403px solid transparent;
+  border-top: 500px solid #292929;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: -403px;
+  top: 0;
+  width: 1px;
+  z-index: 555;
+}
+
+.contact-icons {
+  font-size: 35px; color: White;
+}
+
+.contact-section-container {
+  width: 100%;
   border: 1px solid red;
+  height: 350px;
+  font-size: 0;
+  position: relative;
 }
