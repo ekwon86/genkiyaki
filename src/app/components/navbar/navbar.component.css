@@ -31,18 +31,26 @@
 .nav-links {
   text-transform: uppercase;
   color: #292929;
+  letter-spacing: 2px;
   margin-left: 30px;
   transition: 0.2s;
 }
 
 .nav-links:hover {
   text-decoration: none;
-  color: red;
   cursor: pointer;
+  font-weight: bold;
+  color: #ce3012 !important;
 }
 
 .nav-links:link {
   text-decoration: none;
 }
 
+#menu-link {
+  color: #ce3012;
+}
 
+#menu-link:hover {
+  font-weight: bold;
+}

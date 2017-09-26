@@ -20,6 +20,7 @@ export class GalleryComponent implements OnInit {
     {url: '../../../assets/hotdog.jpg'}
   ];
   showPictureModal = false;
+  currentIndex = 0;
   currentPicURL = '';
 
   constructor() { }
@@ -29,16 +30,25 @@ export class GalleryComponent implements OnInit {
 
   pictureClicked(i) {
     this.showPictureModal = true;
+    this.currentIndex = i;
     document.body.style.overflow = 'hidden';
     this.currentPicURL = this.pictureArray[i].url;
   }
 
   leftArrowClicked() {
-
+    if (this.currentIndex === 0) {
+      this.currentIndex = this.pictureArray.length;
+    }
+    this.currentIndex--;
+    this.currentPicURL = this.pictureArray[this.currentIndex].url;
   }
 
   rightArrowClicked() {
-
+    if (this.currentIndex === this.pictureArray.length - 1) {
+      this.currentIndex = 0;
+    }
+    this.currentIndex++;
+    this.currentPicURL = this.pictureArray[this.currentIndex].url;
   }
 
   closeModal() {

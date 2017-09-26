@@ -13,7 +13,7 @@
           <a *ngIf="!insideMenu" class="nav-links" (click)="smoothScroll($event)">About</a>
           <a *ngIf="!insideMenu" class="nav-links" (click)="smoothScroll($event)">Gallery</a>
           <a *ngIf="!insideMenu" class="nav-links" (click)="smoothScroll($event)">Contact</a>
-          <a *ngIf="!insideMenu" class="nav-links" routerLink="/menu" (click)="menuClicked()">Menu</a>
+          <a *ngIf="!insideMenu" class="nav-links" id="menu-link" routerLink="/menu" (click)="menuClicked()">Menu</a>
         </div>
       </div>
     </div>
