@@ -1,7 +1,7 @@
 #About {
   min-height: 400px;
   height: auto;
-  width: 100%;
+  width: 100vw;
   background-color: #ce3012;
   padding: 100px 0;
 }

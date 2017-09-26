@@ -9,15 +9,13 @@ export class GalleryComponent implements OnInit {
 
   pictureArray = [
     {url: '../../../assets/genkifront.jpg'},
-    {url: '../../../assets/chxbowl.jpg'},
     {url: '../../../assets/taco.jpg'},
     {url: '../../../assets/genkiinside.jpg'},
     {url: '../../../assets/fries.jpg'},
     {url: '../../../assets/zombieboard.jpg'},
     {url: '../../../assets/chxplate.jpg'},
     {url: '../../../assets/taco3.jpg'},
-    {url: '../../../assets/zombierules.jpg'},
-    {url: '../../../assets/chxplate.jpg'}
+    {url: '../../../assets/assortment2.jpg'}
   ];
   showPictureModal = false;
   currentIndex = 0;
@@ -38,8 +36,10 @@ export class GalleryComponent implements OnInit {
         {url: '../../../assets/fries2.jpg'},
         {url: '../../../assets/zombiewall.jpg'},
         {url: '../../../assets/bbqplate2.jpg'},
+        {url: '../../../assets/porkplate.jpg'},
         {url: '../../../assets/genkiman.jpg'},
-        {url: '../../../assets/assortment.jpg'});
+        {url: '../../../assets/zombierules.jpg'});
+
     } else if (this.plusClickCount === 2) {
       this.pictureArray.push(
         {url: '../../../assets/bbqplate.jpg'},
@@ -48,10 +48,10 @@ export class GalleryComponent implements OnInit {
         {url: '../../../assets/genkicombo.jpg'},
         {url: '../../../assets/taco5.jpg'},
         {url: '../../../assets/bbqplate3.jpg'},
+        {url: '../../../assets/combo.jpg'},
         {url: '../../../assets/hotdog.jpg'}
       );
     }
-
   }
 
   pictureClicked(i) {
@@ -72,8 +72,9 @@ export class GalleryComponent implements OnInit {
   rightArrowClicked() {
     if (this.currentIndex === this.pictureArray.length - 1) {
       this.currentIndex = 0;
+    } else {
+      this.currentIndex++;
     }
-    this.currentIndex++;
     this.currentPicURL = this.pictureArray[this.currentIndex].url;
   }
 

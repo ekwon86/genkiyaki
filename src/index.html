@@ -14,15 +14,34 @@
     html {
       height: 100%;
     }
+    /*AIzaSyBZHcboR0DOCDVHWe7wn_havHqmoVnWEC4*/
   </style>
 </head>
 <body>
   <app-root></app-root>
+
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbNYmomkoiqTVhKcNMk8uOYIgTEst9fmk&callback=initMap">
+  </script>
+  <script>
+    function initMap() {
+        setTimeout(function() {
+          var latlng = new google.maps.LatLng(33.846746, -118.124051);
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14,
+            center: latlng
+          });
+          var marker = new google.maps.Marker({
+            position: latlng,
+            map: map
+          });
+          marker.setAnimation(google.maps.Animation.BOUNCE);
+        }, 500);
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-  <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDycEdX6GtPV1I4OHhjVqtRa1D_OblwX1k&callback=initMap">
-  </script>
 </body>
 </html>
+

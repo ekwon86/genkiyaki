@@ -5,7 +5,7 @@
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  width: 100%;
+  width: 100vw;
   position: relative;
   padding: 100px 0
 }
@@ -122,6 +122,8 @@
   text-align: center;
 }
 
+
+
 .gallery-pic-container {
   width: 70%;
   height: 80%;
@@ -135,7 +137,7 @@
   max-height: 100%;
   min-height: 80%;
   max-width: 100%;
-  min-width: 65%;
+  min-width: 40%;
   top: 50%;
   transform: translate(0,-50%);
 }
@@ -154,11 +156,11 @@
 }
 
 .pic-counter-container p {
-  font-weight: bold;
-  font-size: 25px;
+  font-size: 15px;
   margin: 0;
   position: relative;
   top: 50%;
+  color: white;
   transform:translate(0,-50%);
 }
 
@@ -187,7 +189,7 @@
 }
 
 .gallery-icons {
-  font-size: 75px !important;
+  font-size: 45px !important;
   color: white;
   transition: 0.2s;
 }
