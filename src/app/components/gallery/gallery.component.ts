@@ -8,24 +8,50 @@ import { Component, OnInit } from '@angular/core';
 export class GalleryComponent implements OnInit {
 
   pictureArray = [
-    {url: '../../../assets/bbqplate.jpg'},
-    {url: '../../../assets/bbqplate2.jpg'},
+    {url: '../../../assets/genkifront.jpg'},
     {url: '../../../assets/chxbowl.jpg'},
     {url: '../../../assets/taco.jpg'},
+    {url: '../../../assets/genkiinside.jpg'},
     {url: '../../../assets/fries.jpg'},
-    {url: '../../../assets/taco2.jpg'},
+    {url: '../../../assets/zombieboard.jpg'},
     {url: '../../../assets/chxplate.jpg'},
     {url: '../../../assets/taco3.jpg'},
-    {url: '../../../assets/chxplate.jpg'},
-    {url: '../../../assets/hotdog.jpg'}
+    {url: '../../../assets/zombierules.jpg'},
+    {url: '../../../assets/chxplate.jpg'}
   ];
   showPictureModal = false;
   currentIndex = 0;
   currentPicURL = '';
+  plusClickCount = 0;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  plusIconClicked() {
+    this.plusClickCount++;
+    if (this.plusClickCount === 1) {
+      this.pictureArray.push(
+        {url: '../../../assets/taco4.jpg'},
+        {url: '../../../assets/food.jpg'},
+        {url: '../../../assets/fries2.jpg'},
+        {url: '../../../assets/zombiewall.jpg'},
+        {url: '../../../assets/bbqplate2.jpg'},
+        {url: '../../../assets/genkiman.jpg'},
+        {url: '../../../assets/assortment.jpg'});
+    } else if (this.plusClickCount === 2) {
+      this.pictureArray.push(
+        {url: '../../../assets/bbqplate.jpg'},
+        {url: '../../../assets/fries3.jpg'},
+        {url: '../../../assets/taco2.jpg'},
+        {url: '../../../assets/genkicombo.jpg'},
+        {url: '../../../assets/taco5.jpg'},
+        {url: '../../../assets/bbqplate3.jpg'},
+        {url: '../../../assets/hotdog.jpg'}
+      );
+    }
+
   }
 
   pictureClicked(i) {

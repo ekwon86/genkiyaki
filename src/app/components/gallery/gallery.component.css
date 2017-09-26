@@ -1,7 +1,7 @@
 #Gallery {
   min-height: 900px;
   height: auto;
-  background-image: url('../../../assets/taco2.jpg');
+  background-image: url('../../../assets/food.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
