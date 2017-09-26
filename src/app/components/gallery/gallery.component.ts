@@ -19,20 +19,31 @@ export class GalleryComponent implements OnInit {
     {url: '../../../assets/chxplate.jpg'},
     {url: '../../../assets/hotdog.jpg'}
   ];
-  showPictureModal = true;
+  showPictureModal = false;
+  currentPicURL = '';
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  pictureClicked(event, i) {
+  pictureClicked(i) {
     this.showPictureModal = true;
     document.body.style.overflow = 'hidden';
+    this.currentPicURL = this.pictureArray[i].url;
+  }
+
+  leftArrowClicked() {
+
+  }
+
+  rightArrowClicked() {
+
   }
 
   closeModal() {
     this.showPictureModal = false;
+    document.body.style.overflow = 'scroll';
   }
 
 }
