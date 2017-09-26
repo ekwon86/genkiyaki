@@ -1,18 +1,21 @@
 #Gallery {
-  min-height: 800px;
+  min-height: 900px;
   height: auto;
   background-image: url('../../../assets/taco2.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   width: 100%;
+  position: relative;
+  padding: 100px 0
 }
 .overlay {
-  min-height: 800px;
-  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
-  background-color: rgba(0,0,0,0.65);
-  padding: 100px 0;
+  background-color: rgba(0,0,0,0.8);
 }
 .gallery-heading {
   font-family: 'Stint Ultra Expanded', cursive;
@@ -45,4 +48,11 @@
 .picture-overlay:hover {
   cursor: pointer;
   background-color: rgba(255,255,255,0.3);
+}
+
+.modal-background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.25);
 }

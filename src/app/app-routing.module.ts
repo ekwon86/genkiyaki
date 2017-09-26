@@ -1,12 +1,12 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
-import { HomeComponent } from './components/home/home.component';
+import { LandingComponent } from './components/landing/landing.component';
 import { MenuComponent } from './components/menu/menu.component';
 
 const appRoutes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component: LandingComponent
   },
   {
     path: 'menu',

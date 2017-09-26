@@ -5,12 +5,11 @@ import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
-
+import { LandingComponent } from './components/landing/landing.component';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
-import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -19,9 +18,9 @@ import { ContactComponent } from './components/contact/contact.component';
   declarations: [
     AppComponent,
     NavbarComponent,
+    LandingComponent,
     FooterComponent,
     MenuComponent,
-    HomeComponent,
     AboutComponent,
     GalleryComponent,
     ContactComponent
