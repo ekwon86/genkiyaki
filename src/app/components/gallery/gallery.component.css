@@ -27,7 +27,7 @@
   margin-bottom: 30px;
 }
 .picture-container {
-  border: 1px solid white;
+  border: transparent;
   padding: 0;
   min-height: 300px;
   position: relative;
@@ -36,10 +36,12 @@
 }
 .picture {
   height: 300px;
-  border: 1px solid red;
+  border: transparent;
   padding: 0;
   margin: 0;
   display: inline-block;
+  background-position: center;
+  background-size: cover;
 }
 
 .picture-overlay {
@@ -57,4 +59,20 @@
   height: 100%;
   width: 100%;
   background-color: rgba(0,0,0,0.25);
+}
+
+.plus-sign-container {
+  position: relative;
+  margin-top: 50px;
+}
+
+.plus-icon {
+  color: rgba(255,255,255,0.3);
+  z-index: 5;
+  transition: 0.2s;
+}
+
+.plus-icon:hover {
+  cursor: pointer;
+  color: white;
 }

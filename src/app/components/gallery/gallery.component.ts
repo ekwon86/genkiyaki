@@ -14,11 +14,10 @@ export class GalleryComponent implements OnInit {
     {url: '../../../assets/taco.jpg'},
     {url: '../../../assets/fries.jpg'},
     {url: '../../../assets/taco2.jpg'},
-    {url: '../../../assets/taco.jpg'},
     {url: '../../../assets/chxplate.jpg'},
-    {url: '../../../assets/taco2.jpg'},
     {url: '../../../assets/taco3.jpg'},
-    {url: '../../../assets/chxplate.jpg'}
+    {url: '../../../assets/chxplate.jpg'},
+    {url: '../../../assets/hotdog.jpg'}
   ];
 
   constructor() { }

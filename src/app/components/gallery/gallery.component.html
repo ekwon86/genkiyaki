@@ -4,7 +4,7 @@
     <h1 class="gallery-heading">Gallery</h1>
   </div>
   <div class="container-fluid picture-container">
-    <div *ngFor="let pic of pictureArray; let i = index" class="picture col-2" (click)="pictureClicked($event)">
+    <div *ngFor="let pic of pictureArray; let i = index" class="picture col-2" (click)="pictureClicked($event)" [style.backgroundImage]="'url('+ pic.url +')'">
       <div class="picture-overlay"></div>
     </div>
   </div>
