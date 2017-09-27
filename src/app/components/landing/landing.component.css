@@ -41,3 +41,18 @@
 #genki-logo {
   height: 100%;
 }
+
+/*Mobile View*/
+@media only screen and (max-device-width: 480px){
+  #Home {
+    height: 90vh;
+  }
+
+  #genki-logo {
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    height: 50%;
+    width: 80%;
+  }
+}

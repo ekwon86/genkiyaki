@@ -61,3 +61,18 @@
   width: 225px;
   transform: rotate(-5deg);
 }
+
+@media only screen and (max-device-width: 480px) {
+  #About {
+    padding: 35px 15px;
+  }
+  .about-heading {
+    font-size: 24px;
+  }
+  .about-us-text {
+    line-height: 2em;
+  }
+  .about-us-picture-container {
+    display: none;
+  }
+}
