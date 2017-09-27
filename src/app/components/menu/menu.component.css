@@ -87,17 +87,19 @@
   border-top: 75px solid white;
 }
 
-
+.menu-item-body {
+  margin-bottom: 25px;
+}
 
 .menu-item-container {
   height: 75px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  margin-bottom: 20px;
 }
 
 .menu-item-name-container {
   height: 100%;
   transition: 0.2s;
+  position: relative;
   background-color: #ce3012;
   color: white;
 }
@@ -117,10 +119,21 @@
 }
 
 .menu-item-picture-container {
-  background-image: url('../../../assets/chxplate.jpg');
   background-size: 100%;
   background-position: center;
   height: 100%;
+}
+
+.bowls-background-picture {
+  background-image: url('../../../assets/bowl.jpg');
+}
+
+.plates-background-picture {
+  background-image: url('../../../assets/bbqplate.jpg');
+}
+
+.furious-background-picture {
+  background-image: url('../../../assets/chxplate.jpg');
 }
 
 .menu-item-heading {
@@ -140,7 +153,7 @@
 
 .menu-item-text-subcontainer {
   padding: 5px 25px;
-  min-height: 250px;
+  min-height: 100px;
   height: auto;
   background-color: White;
   display: none;
@@ -249,5 +262,19 @@
 
 #BowlsBody {
   display: block;
+}
+
+.food-description {
+  margin-left: 10px;
+  color: #292929;
+  font-size: 12px;
+}
+
+.category-description {
+  color: #ce3012;
+  font-size: 18px;
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
 }
 

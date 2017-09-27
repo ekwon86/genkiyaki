@@ -30,8 +30,9 @@
             <p class="menu-item-heading">[&nbsp;<i *ngIf="bowlsOpen" class="fa fa-minus plus-minus-icons" aria-hidden="true"></i><i *ngIf="!bowlsOpen" class="fa fa-plus plus-minus-icons" aria-hidden="true"></i>&nbsp;]&nbsp;Bowls</p>
           </div>
         </div>
-        <div class="col-6 menu-item-picture-container menu-item-banner" (click)="bowlHeadingClicked()"></div>
-
+        <div class="col-6 menu-item-picture-container bowls-background-picture menu-item-banner" (click)="bowlHeadingClicked()"></div>
+      </div>
+      <div class="row menu-item-body">
         <div class="col-12 menu-item-text-subcontainer" id="BowlsBody">
           <div class="menu-item-text">
             <div class="regular-large-text-container">
@@ -62,9 +63,86 @@
       </div>
       <!-- BOWLS END -->
 
+      <!--PLATES START-->
+      <div class="row menu-item-container">
+        <div class="col-6 menu-item-name-container menu-item-banner" (click)="platesHeadingClicked()">
+          <div class="menu-item-name-subcontainer">
+            <p class="menu-item-heading">[&nbsp;<i *ngIf="platesOpen" class="fa fa-minus plus-minus-icons" aria-hidden="true"></i><i *ngIf="!platesOpen" class="fa fa-plus plus-minus-icons" aria-hidden="true"></i>&nbsp;]&nbsp;Plates</p>
+          </div>
+        </div>
+        <div class="col-6 menu-item-picture-container plates-background-picture menu-item-banner" (click)="platesHeadingClicked()"></div>
+      </div>
+      <div class="row menu-item-body">
+        <div class="col-12 menu-item-text-subcontainer" id="PlatesBody">
+          <div class="menu-item-text">
+            <div class="regular-large-text-container">
+              <div class="regular-large-empty-div"></div>
+              <div class="regular-large-text-subcontainer">
+                <p class="regular-large-text">Salad</p>
+              </div>
+              <div class="regular-large-text-subcontainer">
+                <p class="regular-large-text">Veggies</p>
+              </div>
+            </div>
+            <div class="menu-item-row" *ngFor="let plate of menu.plates">
+              <div class="menu-item">
+                <div class="food-item-text-pic-container">
+                  <p class="food-text">{{ plate.entree }}<img src="../../../assets/ninja-shuriken-red.png" class="recommended-icon" *ngIf="plate.recommended"/></p>
+                  <small class="food-description"><em>{{ plate.description }}</em></small>
+                </div>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ plate.salad }}</p>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ plate.veggies }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--PLATES END-->
 
-
-
+      <!--FURIOUS START-->
+      <div class="row menu-item-container">
+        <div class="col-6 menu-item-name-container menu-item-banner" (click)="furiousHeadingClicked()">
+          <div class="menu-item-name-subcontainer">
+            <p class="menu-item-heading">[&nbsp;<i *ngIf="furiousOpen" class="fa fa-minus plus-minus-icons" aria-hidden="true"></i><i *ngIf="!furiousOpen" class="fa fa-plus plus-minus-icons" aria-hidden="true"></i>&nbsp;]&nbsp;Furious</p>
+          </div>
+        </div>
+        <div class="col-6 menu-item-picture-container furious-background-picture menu-item-banner" (click)="furiousHeadingClicked()"></div>
+      </div>
+      <div class="row menu-item-body">
+        <div class="col-12 menu-item-text-subcontainer" id="FuriousBody">
+          <div class="menu-item-text">
+            <div class="regular-large-text-container">
+              <div class="regular-large-empty-div">
+                <p class="category-description"><em>Pan-Fried with Ninja Sauce to Perfection</em></p>
+              </div>
+              <div class="regular-large-text-subcontainer">
+                <p class="regular-large-text">Regular</p>
+              </div>
+              <div class="regular-large-text-subcontainer">
+                <p class="regular-large-text">Large</p>
+              </div>
+            </div>
+            <div class="menu-item-row" *ngFor="let furious of menu.furious">
+              <div class="menu-item">
+                <div class="food-item-text-pic-container">
+                  <p class="food-text">{{ furious.entree }}<img src="../../../assets/chili-pepper-red.png" class="recommended-icon" *ngIf="furious.isSpicy"/></p>
+                </div>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ furious.regPrice }}</p>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ furious.lgPrice }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--PLATES END-->
     </div>
   </div>
 </div>
