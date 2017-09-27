@@ -46,6 +46,10 @@
 @media only screen and (max-device-width: 480px){
   #Home {
     height: 90vh;
+    background-image: url('../../../assets/mobile-landing.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 
   #genki-logo {
@@ -54,5 +58,9 @@
     transform: translate(0,-50%);
     height: 50%;
     width: 80%;
+  }
+
+  .fire-video {
+    display: none;
   }
 }
