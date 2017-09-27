@@ -13,7 +13,7 @@
   height: auto;
   background-color: rgba(0,0,0,0.75);
   z-index: 100;
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 150px;
 }
 
@@ -77,21 +77,31 @@
   text-transform: uppercase;
 }
 
+.menu-item-banner:hover, .menu-item-name-container:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #ce3012 !important;
+}
+
+.menu-item-name-container:hover:after {
+  border-top: 75px solid white;
+}
+
+
+
 .menu-item-container {
   height: 75px;
-  /*overflow: hidden;*/
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   margin-bottom: 20px;
 }
 
 .menu-item-name-container {
   height: 100%;
+  transition: 0.2s;
   background-color: #ce3012;
+  color: white;
 }
 
-.menu-item-container:hover {
-  cursor: pointer;
-}
 
 .menu-item-name-container:after {
   border-right: 80px solid transparent;
@@ -101,6 +111,7 @@
   position: absolute;
   right: -80px;
   top: 0;
+  transition: 0.2s;
   width: 1px;
   z-index: 2;
 }
@@ -118,7 +129,6 @@
   text-transform: uppercase;
   position: relative;
   font-weight: bold;
-  color: #fff;
   margin: 0;
 }
 
@@ -129,9 +139,115 @@
 }
 
 .menu-item-text-subcontainer {
-  padding: 25px;
+  padding: 5px 25px;
   min-height: 250px;
   height: auto;
   background-color: White;
-  /*display: none;*/
+  display: none;
 }
+
+.menu-item-text {
+  height: 100%;
+  font-size: 0;
+}
+
+.regular-large-text-container {
+  height: 50px;
+  width: 100%;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(206, 48, 18, 0.53);
+}
+
+.regular-large-empty-div {
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.regular-large-text-subcontainer {
+  height: 100%;
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+
+.regular-large-text {
+  color: #ce3012;
+  text-transform: uppercase;
+  font-family: 'Roboto Slab', serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.menu-item-row {
+  height: 50px;
+  width: 100%;
+  vertical-align: top;
+  margin: 15px 0;
+}
+
+.menu-item {
+  height: 100%;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.menu-item *{
+  font-family: 'Roboto Slab', serif;
+}
+
+.food-item-text-pic-container {
+  position: relative;
+  top: 50%;
+  transform:translate(0,-50%);
+}
+
+.food-text {
+  color: #ce3012;
+  font-size: 25px;
+  margin: 0;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.recommended-icon {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.food-reg-lg-price-text-container {
+  height: 100%;
+  width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+
+.food-reg-lg-price-text {
+  color: #292929;
+  font-size: 25px;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.plus-minus-icons {
+  font-size: 25px;
+}
+
+#BowlsBody {
+  display: block;
+}
+

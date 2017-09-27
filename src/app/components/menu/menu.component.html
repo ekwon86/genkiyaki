@@ -23,22 +23,44 @@
       </div>
       <!-- MENU HEADING END -->
 
+      <!-- BOWLS START -->
       <div class="row menu-item-container">
-        <div class="col-6 menu-item-name-container" (click)="menuHeadingClicked()">
+        <div class="col-6 menu-item-name-container menu-item-banner" (click)="bowlHeadingClicked()">
           <div class="menu-item-name-subcontainer">
-            <p class="menu-item-heading">Bowls</p>
+            <p class="menu-item-heading">[&nbsp;<i *ngIf="bowlsOpen" class="fa fa-minus plus-minus-icons" aria-hidden="true"></i><i *ngIf="!bowlsOpen" class="fa fa-plus plus-minus-icons" aria-hidden="true"></i>&nbsp;]&nbsp;Bowls</p>
           </div>
         </div>
-        <div class="col-6 menu-item-picture-container"></div>
-        <div class="col-12 menu-item-text-subcontainer">
-          <div class="menu-item-text" style="height: 100%; border: 1px solid red; font-size: 0;">
-            <div style="height: 25%; width: 50%; border: 1px solid blue; display: inline-block; vertical-align: top;">
-              <p style="color: #ce3012; font-size: 25px; margin: 0; font-weight: bold;">CHICKEN</p>
+        <div class="col-6 menu-item-picture-container menu-item-banner" (click)="bowlHeadingClicked()"></div>
+
+        <div class="col-12 menu-item-text-subcontainer" id="BowlsBody">
+          <div class="menu-item-text">
+            <div class="regular-large-text-container">
+              <div class="regular-large-empty-div"></div>
+              <div class="regular-large-text-subcontainer">
+                <p class="regular-large-text">Regular</p>
+              </div>
+              <div class="regular-large-text-subcontainer">
+                <p class="regular-large-text">Large</p>
+              </div>
             </div>
-            <div style="height: 25%; width: 50%; border: 1px solid blue; display: inline-block; vertical-align: top;"></div>
+            <div class="menu-item-row" *ngFor="let bowl of menu.bowls">
+              <div class="menu-item">
+                <div class="food-item-text-pic-container">
+                  <p class="food-text">{{ bowl.entree }}<img src="../../../assets/ninja-shuriken-red.png" class="recommended-icon" *ngIf="bowl.recommended"/></p>
+                  <p></p>
+                </div>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ bowl.regPrice }}</p>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ bowl.lgPrice }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <!-- BOWLS END -->
 
 
 
