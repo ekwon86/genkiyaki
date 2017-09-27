@@ -8,10 +8,6 @@
   background-repeat: no-repeat;
 }
 
-.menu * {
-  color: white;
-}
-
 .overlay {
   min-height: 100vh;
   height: auto;
@@ -22,16 +18,120 @@
 }
 
 .menu-container {
-  border: 1px solid white;
+  /*border: 1px solid rgba(255, 255, 255, 0.13);*/
   height: 100%;
   padding: 25px;
+}
+
+.menu-heading-row {
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
 }
 
 .menu-heading {
   font-family: 'Stint Ultra Expanded', cursive;
   text-transform: uppercase;
-  padding-bottom: 15px;
   font-weight: bolder;
   letter-spacing: 20px;
   font-size: 2em;
+  margin: 0;
+  color: white;
+  padding: 0;
+}
+
+.menu-heading-content {
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.legend-container {
+  padding: 15px 0;
+  font-size: 0;
+}
+
+.legend-sub-container {
+  width: 33.33%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.legend-icon {
+  margin-right: 20px;
+}
+
+.legend-text {
+  font-family: 'Roboto', serif;
+  font-size: 15px;
+  color: white;
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+  display: inline-block;
+  margin: 0;
+  font-weight: bold;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.menu-item-container {
+  height: 75px;
+  /*overflow: hidden;*/
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin-bottom: 20px;
+}
+
+.menu-item-name-container {
+  height: 100%;
+  background-color: #ce3012;
+}
+
+.menu-item-container:hover {
+  cursor: pointer;
+}
+
+.menu-item-name-container:after {
+  border-right: 80px solid transparent;
+  border-top: 75px solid #ce3012;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: -80px;
+  top: 0;
+  width: 1px;
+  z-index: 2;
+}
+
+.menu-item-picture-container {
+  background-image: url('../../../assets/chxplate.jpg');
+  background-size: 100%;
+  background-position: center;
+  height: 100%;
+}
+
+.menu-item-heading {
+  font-size: 30px;
+  font-family: 'Stint Ultra Expanded', cursive;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.menu-item-name-subcontainer {
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.menu-item-text-subcontainer {
+  padding: 25px;
+  min-height: 250px;
+  height: auto;
+  background-color: White;
+  /*display: none;*/
 }

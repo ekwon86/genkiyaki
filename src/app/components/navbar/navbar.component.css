@@ -33,7 +33,6 @@
   color: #292929;
   letter-spacing: 2px;
   margin-left: 30px;
-  transition: 0.2s;
 }
 
 .nav-links:hover {
@@ -54,3 +53,4 @@
 #menu-link:hover {
   font-weight: bold;
 }
+

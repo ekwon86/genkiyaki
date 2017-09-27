@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import $ from 'jquery';
 
 @Component({
   selector: 'app-menu',
@@ -10,6 +11,10 @@ export class MenuComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  menuHeadingClicked() {
+    $('.menu-item-text-subcontainer').slideToggle('fast');
   }
 
 }

@@ -1,34 +1,48 @@
 <div class="menu">
   <div class="overlay">
     <div class="container menu-container">
-      <h1 class="menu-heading">Menu</h1>
-      <div class="row" style="border: 1px solid yellow; margin-bottom: 25px;">
-        <div class="col-12" style="border: 1px solid red; height: 75px;"></div>
+      <!-- MENU HEADING START -->
+      <div class="row menu-heading-row">
+        <div class="col-6">
+          <h1 class="menu-heading menu-heading-content">Menu</h1>
+        </div>
+        <div class="col-6 legend-container">
+          <div class="legend-sub-container">
+            <img src="../../../assets/ninja-shuriken.png" alt="shuriken" class="legend-icon">
+            <p class="legend-text">Recommended</p>
+          </div>
+          <div class="legend-sub-container">
+            <img src="../../../assets/chili-pepper.png" alt="pepper" class="legend-icon">
+            <p class="legend-text">Spicy</p>
+          </div>
+          <div class="legend-sub-container">
+            <img src="../../../assets/sad.png" alt="sad" class="legend-icon">
+            <p class="legend-text">Painful</p>
+          </div>
+        </div>
       </div>
-      <div class="row" style="border: 1px solid yellow; margin-bottom: 25px;">
-        <div class="col-12" style="border: 1px solid red; height: 75px;"></div>
+      <!-- MENU HEADING END -->
+
+      <div class="row menu-item-container">
+        <div class="col-6 menu-item-name-container" (click)="menuHeadingClicked()">
+          <div class="menu-item-name-subcontainer">
+            <p class="menu-item-heading">Bowls</p>
+          </div>
+        </div>
+        <div class="col-6 menu-item-picture-container"></div>
+        <div class="col-12 menu-item-text-subcontainer">
+          <div class="menu-item-text" style="height: 100%; border: 1px solid red; font-size: 0;">
+            <div style="height: 25%; width: 50%; border: 1px solid blue; display: inline-block; vertical-align: top;">
+              <p style="color: #ce3012; font-size: 25px; margin: 0; font-weight: bold;">CHICKEN</p>
+            </div>
+            <div style="height: 25%; width: 50%; border: 1px solid blue; display: inline-block; vertical-align: top;"></div>
+          </div>
+        </div>
       </div>
-      <div class="row" style="border: 1px solid yellow; margin-bottom: 25px;">
-        <div class="col-12" style="border: 1px solid red; height: 75px;"></div>
-      </div>
-      <div class="row" style="border: 1px solid yellow; margin-bottom: 25px;">
-        <div class="col-12" style="border: 1px solid red; height: 75px;"></div>
-      </div>
-      <div class="row" style="border: 1px solid yellow; margin-bottom: 25px;">
-        <div class="col-12" style="border: 1px solid red; height: 75px;"></div>
-      </div>
-      <div class="row" style="border: 1px solid yellow; margin-bottom: 25px;">
-        <div class="col-12" style="border: 1px solid red; height: 75px;"></div>
-      </div>
-      <div class="row" style="border: 1px solid yellow; margin-bottom: 25px;">
-        <div class="col-12" style="border: 1px solid red; height: 75px;"></div>
-      </div>
-      <div class="row" style="border: 1px solid yellow; margin-bottom: 25px;">
-        <div class="col-12" style="border: 1px solid red; height: 75px;"></div>
-      </div>
-      <div class="row" style="border: 1px solid yellow; margin-bottom: 25px;">
-        <div class="col-12" style="border: 1px solid red; height: 75px;"></div>
-      </div>
+
+
+
+
     </div>
   </div>
 </div>
