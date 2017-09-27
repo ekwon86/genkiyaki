@@ -28,6 +28,46 @@ export class MenuComponent implements OnInit {
       { entree: 'Furious Chicken', regPrice: '6.99', lgPrice: '7.99', isSpicy: true },
       { entree: 'Furious Pork', regPrice: '', lgPrice: '7.99', isSpicy: true },
       { entree: 'Furious Ninja Dog', regPrice: '5.99', lgPrice: '', isSpicy: true },
+    ],
+    ninja: [
+      { entree: 'Ninja Fries', price: '5.99', recommended: true },
+      { entree: 'Ninja Nachos', price: '5.99', recommended: true },
+      { entree: 'Ninja Cali Burrito', price: '7.99', recommended: false },
+      { entree: 'Ninja "Chicken" Slam! (Quesadilla)', price: '5.99', recommended: false },
+      { entree: 'Ninja Taco (Mild)', price: '1.25', recommended: true }
+    ],
+    tacos: [
+      { entree: 'Ninja Taco (Mild)', price: '1.25', recommended: true, description: '', isSpicy: false, isDeath: false },
+      { entree: 'Epic Taco (Medium)', price: '1.50', recommended: false, description: '', isSpicy: true, isDeath: false},
+      { entree: 'Death Taco (Extreme)', price: '3.00', recommended: false, description: 'Dine-In Only / Limited Quantity', isSpicy: false, isDeath: true },
+      { entree: 'Shrimp Taco', price: '2.25', recommended: false , description: '', isSpicy: false, isDeath: false },
+      { entree: 'Beef Ribeye Taco', price: '2.00', recommended: false, description: '', isSpicy: false, isDeath: false }
+    ],
+    soupAndSalad: [
+      { entree: 'Udon Soup (Soup Only)', price: '1.99', description: '' },
+      { entree: 'Udon Noodles (Soup and Noodles)', price: '5.99', description: '' },
+      { entree: 'Garden Salad (Small Only)', price: '2.00', description: '' },
+      { entree: 'Chicken Salad', price: '6.99', description: 'Includes soy sauce vinaigrette dressing' }
+    ],
+    extra: [
+      { name: 'Chicken', price: '2.99' },
+      { name: 'Beef', price: '3.99' },
+      { name: 'BBQ Ribs', price: '3.99' },
+      { name: 'Rice', price: '1.59' },
+      { name: 'Veggies', price: '2.00' }
+    ],
+    sides: [
+      { name: 'Gyoza (6 Pieces)', price: '3.99', description: '' },
+      { name: 'Shrimp Tempura (5 Pieces)', price: '6.99', description: '' },
+      { name: 'Kimchee', price: '2.00', description: '' },
+      { name: 'Yakitori Chicken', price: '1.00', description: 'Sold Individually '}
+    ],
+    drinks: [
+      { name: 'Regular', price: '1.59' },
+      { name: 'Large', price: '1.99' },
+      { name: 'Coconut', price: '2.00' },
+      { name: 'Snapple', price: '2.00' },
+      { name: 'Water', price: '1.00' }
     ]
   };
 
@@ -35,6 +75,11 @@ export class MenuComponent implements OnInit {
   platesOpen = false;
   furiousOpen = false;
   ninjaOpen = false;
+  tacosOpen = false;
+  soupAndSaladOpen = false;
+  extraOpen = false;
+  sidesOpen = false;
+  drinksOpen= false;
 
   constructor() { }
 
@@ -54,5 +99,35 @@ export class MenuComponent implements OnInit {
   furiousHeadingClicked() {
     this.furiousOpen = !this.furiousOpen;
     $('#FuriousBody').slideToggle('fast');
+  }
+
+  ninjaHeadingClicked() {
+    this.ninjaOpen = !this.ninjaOpen;
+    $('#NinjaBody').slideToggle('fast');
+  }
+
+  tacosHeadingClicked() {
+    this.tacosOpen = !this.tacosOpen;
+    $('#TacosBody').slideToggle('fast');
+  }
+
+  soupAndSaladHeadingClicked() {
+    this.soupAndSaladOpen = !this.soupAndSaladOpen;
+    $('#SoupSaladBody').slideToggle('fast');
+  }
+
+  extraHeadingClicked() {
+    this.extraOpen = !this.extraOpen;
+    $('#ExtraBody').slideToggle('fast');
+  }
+
+  sidesHeadingClicked() {
+    this.sidesOpen = !this.sidesOpen;
+    $('#SidesBody').slideToggle('fast');
+  }
+
+  drinksHeadingClicked() {
+    this.drinksOpen = !this.drinksOpen;
+    $('#DrinksBody').slideToggle('fast');
   }
 }

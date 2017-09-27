@@ -87,7 +87,7 @@
             <div class="menu-item-row" *ngFor="let plate of menu.plates">
               <div class="menu-item">
                 <div class="food-item-text-pic-container">
-                  <p class="food-text">{{ plate.entree }}<img src="../../../assets/ninja-shuriken-red.png" class="recommended-icon" *ngIf="plate.recommended"/></p>
+                  <p class="food-text">{{ plate.entree }}<img src="../../../assets/ninja-shuriken-red.png" class="recommended-icon" *ngIf="plate.recommended"/></p><br>
                   <small class="food-description"><em>{{ plate.description }}</em></small>
                 </div>
               </div>
@@ -102,6 +102,84 @@
         </div>
       </div>
       <!--PLATES END-->
+
+      <!--TACOS START-->
+      <div class="row menu-item-container">
+        <div class="col-6 menu-item-name-container menu-item-banner" (click)="tacosHeadingClicked()">
+          <div class="menu-item-name-subcontainer">
+            <p class="menu-item-heading">[&nbsp;<i *ngIf="tacosOpen" class="fa fa-minus plus-minus-icons" aria-hidden="true"></i><i *ngIf="!tacosOpen" class="fa fa-plus plus-minus-icons" aria-hidden="true"></i>&nbsp;]&nbsp;Tacos</p>
+          </div>
+        </div>
+        <div class="col-6 menu-item-picture-container tacos-background-picture menu-item-banner" (click)="tacosHeadingClicked()"></div>
+      </div>
+      <div class="row menu-item-body">
+        <div class="col-12 menu-item-text-subcontainer" id="TacosBody">
+          <div class="menu-item-text">
+            <div class="regular-large-text-container">
+              <div class="regular-large-empty-div"></div>
+            </div>
+            <div class="menu-item-row" *ngFor="let taco of menu.tacos">
+              <div class="menu-item">
+                <div class="food-item-text-pic-container">
+                  <p class="food-text">
+                    {{ taco.entree }}
+                    <img src="../../../assets/ninja-shuriken-red.png" class="recommended-icon" *ngIf="taco.recommended"/>
+                    <img src="../../../assets/chili-pepper-red.png" class="recommended-icon" *ngIf="taco.isSpicy"/>
+                    <span *ngIf="taco.isDeath">
+                      <img src="../../../assets/chili-pepper-red.png" class="recommended-icon"/>
+                      <img src="../../../assets/chili-pepper-red.png" class="recommended-icon"/>
+                      <img src="../../../assets/chili-pepper-red.png" class="recommended-icon"/>
+                       <img src="../../../assets/sad-red.png" class="recommended-icon"/>
+                    </span>
+                  </p>
+                  <br/>
+                  <small class="food-description"><em>{{ taco.description }}</em></small>
+                </div>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ taco.price }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--TACOS END-->
+
+      <!--NINJA START-->
+      <div class="row menu-item-container">
+        <div class="col-6 menu-item-name-container menu-item-banner" (click)="ninjaHeadingClicked()">
+          <div class="menu-item-name-subcontainer">
+            <p class="menu-item-heading">[&nbsp;<i *ngIf="ninjaOpen" class="fa fa-minus plus-minus-icons" aria-hidden="true"></i><i *ngIf="!ninjaOpen" class="fa fa-plus plus-minus-icons" aria-hidden="true"></i>&nbsp;]&nbsp;Ninja</p>
+          </div>
+        </div>
+        <div class="col-6 menu-item-picture-container ninja-background-picture menu-item-banner" (click)="ninjaHeadingClicked()"></div>
+      </div>
+      <div class="row menu-item-body">
+        <div class="col-12 menu-item-text-subcontainer" id="NinjaBody">
+          <div class="menu-item-text">
+            <div class="regular-large-text-container">
+              <div class="regular-large-empty-div">
+                <p class="category-description"><em>Comes with Beef, Chicken, Onions, Cilantro, Cheese, and Ninja Sauce</em></p>
+              </div>
+            </div>
+            <div class="menu-item-row" *ngFor="let ninja of menu.ninja">
+              <div class="menu-item">
+                <div class="food-item-text-pic-container">
+                  <p class="food-text">{{ ninja.entree }}<img src="../../../assets/ninja-shuriken-red.png" class="recommended-icon" *ngIf="ninja.recommended"/></p>
+                </div>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ ninja.price }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--NINJA END-->
 
       <!--FURIOUS START-->
       <div class="row menu-item-container">
@@ -142,7 +220,134 @@
           </div>
         </div>
       </div>
-      <!--PLATES END-->
+      <!--FURIOUS END-->
+
+      <!--SOUP SALAD START-->
+      <div class="row menu-item-container">
+        <div class="col-6 menu-item-name-container menu-item-banner" (click)="soupAndSaladHeadingClicked()">
+          <div class="menu-item-name-subcontainer">
+            <p class="menu-item-heading">[&nbsp;<i *ngIf="soupAndSaladOpen" class="fa fa-minus plus-minus-icons" aria-hidden="true"></i><i *ngIf="!soupAndSaladOpen" class="fa fa-plus plus-minus-icons" aria-hidden="true"></i>&nbsp;]&nbsp;Soup & Salad</p>
+          </div>
+        </div>
+        <div class="col-6 menu-item-picture-container soupsalad-background-picture menu-item-banner" (click)="soupAndSaladHeadingClicked()"></div>
+      </div>
+      <div class="row menu-item-body">
+        <div class="col-12 menu-item-text-subcontainer" id="SoupSaladBody">
+          <div class="menu-item-text">
+            <div class="regular-large-text-container"></div>
+            <div class="menu-item-row" *ngFor="let soup of menu.soupAndSalad">
+              <div class="menu-item">
+                <div class="food-item-text-pic-container">
+                  <p class="food-text">{{ soup.entree }}</p>
+                  <br>
+                  <small class="food-description"><em>{{ soup.description }}</em></small>
+                </div>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ soup.price }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--SOUP SALAD END-->
+
+      <!--SIDES START-->
+      <div class="row menu-item-container">
+        <div class="col-6 menu-item-name-container menu-item-banner" (click)="sidesHeadingClicked()">
+          <div class="menu-item-name-subcontainer">
+            <p class="menu-item-heading">[&nbsp;<i *ngIf="sidesOpen" class="fa fa-minus plus-minus-icons" aria-hidden="true"></i><i *ngIf="!sidesOpen" class="fa fa-plus plus-minus-icons" aria-hidden="true"></i>&nbsp;]&nbsp;Sides</p>
+          </div>
+        </div>
+        <div class="col-6 menu-item-picture-container sides-background-picture menu-item-banner" (click)="sidesHeadingClicked()"></div>
+      </div>
+      <div class="row menu-item-body">
+        <div class="col-12 menu-item-text-subcontainer" id="SidesBody">
+          <div class="menu-item-text">
+            <div class="regular-large-text-container"></div>
+            <div class="menu-item-row" *ngFor="let side of menu.sides">
+              <div class="menu-item">
+                <div class="food-item-text-pic-container">
+                  <p class="food-text">{{ side.name }}</p>
+                  <br>
+                  <small class="food-description"><em>{{ side.description }}</em></small>
+                </div>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ side.price }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--SIDES END-->
+
+      <!--EXTRA START-->
+      <div class="row menu-item-container">
+        <div class="col-6 menu-item-name-container menu-item-banner" (click)="extraHeadingClicked()">
+          <div class="menu-item-name-subcontainer">
+            <p class="menu-item-heading">[&nbsp;<i *ngIf="extraOpen" class="fa fa-minus plus-minus-icons" aria-hidden="true"></i><i *ngIf="!extraOpen" class="fa fa-plus plus-minus-icons" aria-hidden="true"></i>&nbsp;]&nbsp;Extra</p>
+          </div>
+        </div>
+        <div class="col-6 menu-item-picture-container extra-background-picture menu-item-banner" (click)="extraHeadingClicked()"></div>
+      </div>
+      <div class="row menu-item-body">
+        <div class="col-12 menu-item-text-subcontainer" id="ExtraBody">
+          <div class="menu-item-text">
+            <div class="regular-large-text-container"></div>
+            <div class="menu-item-row" *ngFor="let item of menu.extra">
+              <div class="menu-item">
+                <div class="food-item-text-pic-container">
+                  <p class="food-text">{{ item.name }}</p>
+                  <br>
+                </div>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ item.price }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--EXTRA END-->
+
+      <!--DRINKS START-->
+      <div class="row menu-item-container">
+        <div class="col-6 menu-item-name-container menu-item-banner" (click)="drinksHeadingClicked()">
+          <div class="menu-item-name-subcontainer">
+            <p class="menu-item-heading">[&nbsp;<i *ngIf="drinksOpen" class="fa fa-minus plus-minus-icons" aria-hidden="true"></i><i *ngIf="!drinksOpen" class="fa fa-plus plus-minus-icons" aria-hidden="true"></i>&nbsp;]&nbsp;Drinks</p>
+          </div>
+        </div>
+        <div class="col-6 menu-item-picture-container drinks-background-picture menu-item-banner" (click)="drinksHeadingClicked()"></div>
+      </div>
+      <div class="row menu-item-body">
+        <div class="col-12 menu-item-text-subcontainer" id="DrinksBody">
+          <div class="menu-item-text">
+            <div class="regular-large-text-container"></div>
+            <div class="menu-item-row" *ngFor="let drink of menu.drinks">
+              <div class="menu-item">
+                <div class="food-item-text-pic-container">
+                  <p class="food-text">{{ drink.name }}</p>
+                  <br>
+                </div>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ drink.price }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--DRINKS END-->
+
     </div>
   </div>
 </div>

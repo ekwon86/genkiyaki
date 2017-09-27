@@ -136,6 +136,33 @@
   background-image: url('../../../assets/chxplate.jpg');
 }
 
+.ninja-background-picture {
+  background-image: url('../../../assets/fries3.jpg');
+}
+
+.tacos-background-picture {
+  background-image: url('../../../assets/taco.jpg');
+}
+
+.soupsalad-background-picture {
+  background-image: url('../../../assets/udon.jpg');
+}
+
+.sides-background-picture {
+  background-image: url('../../../assets/gyoza.jpg');
+}
+
+.extra-background-picture {
+  background-image: url('../../../assets/taco2.jpg');
+}
+
+.drinks-background-picture {
+  background-image: url('../../../assets/soda.jpg');
+}
+
+
+
+
 .menu-item-heading {
   font-size: 30px;
   font-family: 'Stint Ultra Expanded', cursive;
@@ -265,7 +292,6 @@
 }
 
 .food-description {
-  margin-left: 10px;
   color: #292929;
   font-size: 12px;
 }
@@ -277,4 +303,5 @@
   top: 50%;
   transform: translate(0,-50%);
 }
+
 
