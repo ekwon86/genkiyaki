@@ -78,3 +78,12 @@
   font-size: 0;
   position: relative;
 }
+
+@media only screen and (max-device-width: 480px) {
+  #Location {
+    height: 40vh;
+  }
+  #map {
+    height: 40vh;
+  }
+}

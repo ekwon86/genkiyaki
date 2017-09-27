@@ -4,10 +4,18 @@
     <h1 class="gallery-heading">Gallery </h1>
   </div>
   <div class="container-fluid picture-container">
-    <div *ngFor="let pic of pictureArray; let i = index" class="picture col-2" (click)="pictureClicked(i)" [style.backgroundImage]="'url('+ pic.url +')'">
+    <div *ngFor="let pic of pictureArray; let i = index" class="picture col-md-2" (click)="pictureClicked(i)" [style.backgroundImage]="'url('+ pic.url +')'">
       <div class="picture-overlay"></div>
     </div>
   </div>
+
+  <div class="container-fluid mobile-picture-container">
+    <div *ngFor="let pic of pictureArray; let i = index" class="picture col-4" (click)="pictureClicked(i)" [style.backgroundImage]="'url('+ pic.url +')'">
+      <div class="picture-overlay"></div>
+    </div>
+  </div>
+
+
   <div class="plus-sign-container text-center">
     <i class="fa fa-plus fa-4x plus-icon" aria-hidden="true" (click)="plusIconClicked()" *ngIf="plusClickCount < 2"></i>
   </div>
