@@ -55,10 +55,18 @@
   font-weight: bold;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 /*Mobile View*/
 @media only screen and (max-device-width: 480px){
   .top-navbar {
     display: none;
+  }
+
+  .mobile-nav {
+    display: block;
   }
 }
 

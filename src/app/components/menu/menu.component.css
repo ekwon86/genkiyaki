@@ -325,6 +325,12 @@
     border-right: 80px solid transparent;
     border-top: 50px solid #ce3012;
   }
+  .regular-large-text-subcontainer {
+    width: 20%;
+  }
+  .regular-large-empty-div {
+    width: 60%;
+  }
   .legend-icon {
     width: 20px;
     height: 20px;
@@ -350,25 +356,37 @@
     font-size: 12px;
   }
   .plus-minus-icons {
-    font-size: 18px;
+    font-size: 12px;
   }
   .regular-large-text-container {
-    height: 25px;
+    height: 40px;
   }
   .regular-large-text {
     font-size: 15px;
+  }
+  .menu-item {
+    width: 60%;
   }
   .menu-item-row {
     height: 25px;
     margin: 5px 0 10px 0;
   }
   .food-text, .food-reg-lg-price-text {
-    font-size: 14px;
+    font-size: 12px;
+  }
+  .food-reg-lg-price-text-container {
+    width: 20%;
   }
   .recommended-icon {
     margin-left: 5px;
     width: 18px;
     height: 18px;
   }
+  .food-description {
+    font-size: 10px;
+  }
 
+  .category-description {
+    font-size: 12px;
+  }
 }
