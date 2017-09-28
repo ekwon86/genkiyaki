@@ -24,6 +24,15 @@ export class NavbarComponent implements OnInit {
     }, 500);
   }
 
+  smoothScrollMobile(event) {
+    const section = '#' + event.target.innerHTML;
+    $('html, body').animate({
+      scrollTop: $(section).offset().top - 50
+    }, 500);
+
+  }
+
+
   menuClicked() {
     $('html, body').animate({
       scrollTop: $('html, body').offset().top

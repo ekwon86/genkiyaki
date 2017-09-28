@@ -26,19 +26,25 @@
   </button>
   <a class="navbar-brand" routerLink="/">Genkiyaki</a>
 
-  <div class="navbar-collapse collapse show" id="navbarColor01" aria-expanded="true" style="">
+  <div class="navbar-collapse collapse" id="navbarColor01" aria-expanded="true" style="">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a *ngIf="!insideMenu" class="nav-link"  routerLink="/">Home</a>
+        <a *ngIf="!insideMenu" data-toggle="collapse" data-target=".navbar-collapse" class="nav-link" (click)="smoothScrollMobile($event)">Home</a>
       </li>
       <li class="nav-item">
-        <a *ngIf="!insideMenu" class="nav-link" (click)="smoothScroll($event)">About</a>
+        <a *ngIf="!insideMenu" data-toggle="collapse"  data-target=".navbar-collapse" class="nav-link" (click)="smoothScrollMobile($event)">About</a>
       </li>
       <li class="nav-item">
-        <a *ngIf="!insideMenu" class="nav-link" (click)="smoothScroll($event)">Gallery</a>
+        <a *ngIf="!insideMenu" data-toggle="collapse" data-target=".navbar-collapse" class="nav-link" (click)="smoothScrollMobile($event)">Gallery</a>
       </li>
       <li class="nav-item">
-        <a *ngIf="!insideMenu" class="nav-link" (click)="smoothScroll($event)">Location</a>
+        <a *ngIf="!insideMenu" data-toggle="collapse"  data-target=".navbar-collapse" class="nav-link" (click)="smoothScrollMobile($event)">Location</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="!insideMenu" data-toggle="collapse" class="nav-link" id="menu-link" routerLink="/menu" (click)="menuClicked()">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a *ngIf="insideMenu" data-toggle="collapse" class="nav-link" (click)="returnHome()" routerLink="/">Return Home</a>
       </li>
     </ul>
   </div>

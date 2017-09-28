@@ -68,5 +68,11 @@
   .mobile-nav {
     display: block;
   }
+
+  .navbar-brand {
+    font-family: 'Stint Ultra Expanded', cursive;
+    text-transform: uppercase;
+  }
+
 }
 

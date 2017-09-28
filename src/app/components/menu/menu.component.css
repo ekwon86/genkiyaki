@@ -306,6 +306,10 @@
 
 /*Mobile Menu CSS*/
 @media only screen and (max-device-width: 480px){
+  .overlay {
+    padding-top: 75px;
+    padding-bottom: 10px;
+  }
   .menu-heading-container {
     padding: 0;
   }
