@@ -304,4 +304,71 @@
   transform: translate(0,-50%);
 }
 
+/*Mobile Menu CSS*/
+@media only screen and (max-device-width: 480px){
+  .menu-heading-container {
+    padding: 0;
+  }
+  .menu-heading {
+    font-size: 25px;
+    letter-spacing: 10px;
+    border-bottom: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .menu-heading-row {
+    border-bottom: transparent;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  .menu-item-name-container:after {
+    border-right: 80px solid transparent;
+    border-top: 50px solid #ce3012;
+  }
+  .legend-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  .legend-container {
+    padding: 5px 0;
+  }
+  .legend-text {
+    font-size: 12px;
+  }
+  .menu-item-body {
+    margin-bottom: 10px;
+  }
+  .menu-item-text-subcontainer {
+    padding: 10px;
+  }
+  .menu-item-container {
+    height: 50px;
+    overflow: hidden;
+  }
+  .menu-item-heading {
+    font-size: 12px;
+  }
+  .plus-minus-icons {
+    font-size: 18px;
+  }
+  .regular-large-text-container {
+    height: 25px;
+  }
+  .regular-large-text {
+    font-size: 15px;
+  }
+  .menu-item-row {
+    height: 25px;
+    margin: 5px 0 10px 0;
+  }
+  .food-text, .food-reg-lg-price-text {
+    font-size: 14px;
+  }
+  .recommended-icon {
+    margin-left: 5px;
+    width: 18px;
+    height: 18px;
+  }
 
+}
