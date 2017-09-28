@@ -16,22 +16,6 @@
 </head>
 <body>
   <app-root></app-root>
-  <script>
-    function initMap() {
-        setTimeout(function() {
-          var latlng = new google.maps.LatLng(33.846746, -118.124051);
-          var map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 14,
-            center: latlng
-          });
-          var marker = new google.maps.Marker({
-            position: latlng,
-            map: map
-          });
-          marker.setAnimation(google.maps.Animation.BOUNCE);
-        }, 1000);
-    }
-  </script>
   <script async defer
           src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbNYmomkoiqTVhKcNMk8uOYIgTEst9fmk&callback=initMap">
   </script>

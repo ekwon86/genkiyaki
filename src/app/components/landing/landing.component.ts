@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
+import { } from '@types/googlemaps';
 
 @Component({
   selector: 'app-landing',
@@ -36,6 +37,22 @@ export class LandingComponent implements OnInit {
 
   ngOnInit() {
     this.showBanner();
+    this.initMap();
+  }
+
+  initMap() {
+    setTimeout(function() {
+      const latlng = new google.maps.LatLng(33.846746, -118.124051);
+      const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 14,
+        center: latlng
+      });
+      const marker = new google.maps.Marker({
+        position: latlng,
+        map: map
+      });
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+    }, 1000);
   }
 
   showBanner() {
