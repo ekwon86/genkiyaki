@@ -1,6 +1,6 @@
 #Video {
-  height: 1000px;
-  background-color: #1e1e1e;
+  height: 1350px;
+  background-color: #111111;
   width: 100%;
   padding: 100px 0;
 }
@@ -18,7 +18,7 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.58);
   padding-bottom: 15px;
   color: white;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .video-container {
@@ -27,5 +27,37 @@
   margin-top: 15px;
 }
 
-.deathtacoskull {
+.youtube-link-container {
+  /*border: 1px solid red;*/
+  font-size: 0;
+  height: 150px;
+}
+
+.coming-soon-container {
+  height: 175px;
+  text-align: center;
+  margin: 35px 0;
+}
+
+.coming-soon-heading {
+  font-family: 'Stint Ultra Expanded', cursive;
+  text-transform: uppercase;
+  color: #ce3012;
+}
+
+.youtube-link-subcontainers {
+  vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  height: 100%;
+  /*border: 1px solid white;*/
+  text-align: center;
+}
+
+.youtube-logo-links {
+  position: relative;
+  top: 50%;
+  transform: translate(0,-50%);
+  width: 80%;
 }
