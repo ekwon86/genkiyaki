@@ -26,8 +26,7 @@ export class MenuComponent implements OnInit {
     ],
     furious: [
       { entree: 'Furious Chicken', regPrice: '6.99', lgPrice: '7.99', isSpicy: true },
-      { entree: 'Furious Pork', regPrice: '', lgPrice: '7.99', isSpicy: true },
-      { entree: 'Furious Ninja Dog', regPrice: '5.99', lgPrice: '', isSpicy: true },
+      { entree: 'Furious Ninja Dog', regPrice: '5.99', lgPrice: '', isSpicy: true }
     ],
     ninja: [
       { entree: 'Ninja Fries', price: '5.99', recommended: true },

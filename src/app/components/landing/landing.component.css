@@ -59,7 +59,27 @@
     height: 50%;
     width: 80%;
   }
+  .fire-video {
+    display: none;
+  }
+}
 
+@media only screen and (min-device-width: 481px) and (max-device-width: 750px) {
+  #Home {
+    height: 90vh;
+    background-image: url('../../../assets/mobile-landing.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  #genki-logo {
+    position: relative;
+    top: 55%;
+    transform: translate(0,-50%);
+    height: 50%;
+    width: 50%;
+  }
   .fire-video {
     display: none;
   }

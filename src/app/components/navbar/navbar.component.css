@@ -59,8 +59,21 @@
   display: none;
 }
 
-/*Mobile View*/
+/*Mobile Portrait View*/
 @media only screen and (max-device-width: 480px){
+  .top-navbar {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+
+}
+
+/*Mobile Landscape View*/
+@media only screen and (max-device-width: 750px) {
   .top-navbar {
     display: none;
   }
@@ -73,6 +86,5 @@
     font-family: 'Stint Ultra Expanded', cursive;
     text-transform: uppercase;
   }
-
 }
 
