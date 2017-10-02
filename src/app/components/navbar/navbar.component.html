@@ -12,7 +12,7 @@
           <a *ngIf="!insideMenu" class="nav-links" (click)="smoothScroll($event)">Home</a>
           <a *ngIf="!insideMenu" class="nav-links" (click)="smoothScroll($event)">Gallery</a>
           <a *ngIf="!insideMenu" class="nav-links" (click)="smoothScroll($event)">About</a>
-          <a *ngIf="!insideMenu" class="nav-links" (click)="smoothScroll($event)">Location</a>
+          <a *ngIf="!insideMenu" class="nav-links" (click)="smoothScroll($event)">Locations</a>
           <a *ngIf="!insideMenu" class="nav-links" id="menu-link" routerLink="/menu" (click)="menuClicked()">Menu</a>
         </div>
       </div>
@@ -38,7 +38,7 @@
         <a *ngIf="!insideMenu" data-toggle="collapse"  data-target=".navbar-collapse" class="nav-link" (click)="smoothScrollMobile($event)">About</a>
       </li>
       <li class="nav-item">
-        <a *ngIf="!insideMenu" data-toggle="collapse"  data-target=".navbar-collapse" class="nav-link" (click)="smoothScrollMobile($event)">Location</a>
+        <a *ngIf="!insideMenu" data-toggle="collapse"  data-target=".navbar-collapse" class="nav-link" (click)="smoothScrollMobile($event)">Locations</a>
       </li>
       <li class="nav-item">
         <a *ngIf="!insideMenu" data-toggle="collapse" class="nav-link" id="menu-link" routerLink="/menu" (click)="menuClicked()">Menu</a>

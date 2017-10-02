@@ -1,9 +1,22 @@
-#Location {
+#Locations {
   height: auto;
   width: 100vw;
   position: relative;
   padding: 80px 0;
-  background-color: rgba(0,0,0,0.8);
+  background-image: url('../../../assets/combobowl.jpg');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.75);
 }
 
 .locations-heading {
@@ -44,7 +57,7 @@
   font-family: 'Stint Ultra Expanded', cursive;
   text-transform: uppercase;
   color: rgb(252,25,25);
-  border-bottom: rgba(255,255,255,0.3) 1px solid;
+  border-bottom: rgba(255, 255, 255, 0.14) 1px solid;
   font-weight: bold;
   padding-bottom: 8px;
 }
