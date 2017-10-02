@@ -13,6 +13,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { AboutComponent } from './components/about/about.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { VideoComponent } from './components/video/video.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContactComponent } from './components/contact/contact.component';
     MenuComponent,
     AboutComponent,
     GalleryComponent,
-    ContactComponent
+    ContactComponent,
+    VideoComponent
   ],
   imports: [
     BrowserModule,
