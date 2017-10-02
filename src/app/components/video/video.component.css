@@ -1,0 +1,31 @@
+#Video {
+  height: 1000px;
+  background-color: #1e1e1e;
+  width: 100%;
+  padding: 100px 0;
+}
+
+.video-text {
+  color: white;
+  line-height: 3em;
+  text-align: justify
+}
+
+.video-heading {
+  font-family: 'Stint Ultra Expanded', cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.58);
+  padding-bottom: 15px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.video-container {
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 15px;
+  margin-top: 15px;
+}
+
+.deathtacoskull {
+}

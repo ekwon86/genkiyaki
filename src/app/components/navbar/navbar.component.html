@@ -9,7 +9,7 @@
       <div class="col-10">
         <div class="link-container">
           <a *ngIf="insideMenu" class="nav-links" (click)="returnHome()" routerLink="/">Return Home</a>
-          <a *ngIf="!insideMenu" class="nav-links"  routerLink="/">Home</a>
+          <a *ngIf="!insideMenu" class="nav-links" (click)="smoothScroll($event)">Home</a>
           <a *ngIf="!insideMenu" class="nav-links" (click)="smoothScroll($event)">Gallery</a>
           <a *ngIf="!insideMenu" class="nav-links" (click)="smoothScroll($event)">About</a>
           <a *ngIf="!insideMenu" class="nav-links" (click)="smoothScroll($event)">Location</a>
