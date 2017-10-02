@@ -38,12 +38,27 @@ export class LandingComponent implements OnInit {
   ngOnInit() {
     this.showBanner();
     this.initMap();
+    this.initMap2();
   }
 
   initMap() {
     setTimeout(function() {
       const latlng = new google.maps.LatLng(33.846746, -118.124051);
       const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 14,
+        center: latlng
+      });
+      const marker = new google.maps.Marker({
+        position: latlng,
+        map: map
+      });
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+    }, 1000);
+  }
+  initMap2() {
+    setTimeout(function() {
+      const latlng = new google.maps.LatLng(33.975706, -117.342088);
+      const map = new google.maps.Map(document.getElementById('map2'), {
         zoom: 14,
         center: latlng
       });
