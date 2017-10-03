@@ -7,7 +7,7 @@
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .overlay {
@@ -161,10 +161,58 @@
 }
 
 @media only screen and (max-device-width: 480px) {
-  #Location {
-    height: 40vh;
+  #Locations {
+    height: 775px;
+    padding: 35px 15px;
   }
-  #map {
-    height: 40vh;
+  .locations-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .address-city-heading {
+    font-size: 20px;
+  }
+  .locations-map-container {
+    height: auto;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  .address-text {
+    font-size: 16px;
+  }
+  .address-container {
+    text-align: left;
+  }
+  #map, #map2 {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 750px) {
+  #Locations {
+    padding: 35px 15px;
+  }
+
+  .locations-heading {
+    font-size: 24px;
+  }
+  .address-text {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+  .address-container {
+    text-align: left;
+  }
+  .address-city-heading {
+    font-size: 20px;
+  }
+  #map, #map2 {
+    margin-top: 15px;
+    height: 200px;
+  }
+  .locations-map-container {
+    height: auto;
+    margin-bottom: 35px;
+    position: relative;
   }
 }

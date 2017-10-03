@@ -62,8 +62,8 @@
   width: 80%;
 }
 
-.mobile-youtube {
-  display: none;
+#youtube-video {
+  height: 500px;
 }
 
 @media only screen and (max-device-width: 480px){
@@ -101,6 +101,9 @@
     width: 100%;
   }
 
+  #youtube-video  {
+    height: 250px;
+  }
 }
 
 
@@ -128,5 +131,9 @@
   #Video {
     padding: 45px 15px;
     height: 890px;
+  }
+
+  #youtube-video  {
+    height: 250px;  
   }
 }
