@@ -59,6 +59,10 @@
   position: relative;
   top: 50%;
   transform: translate(0,-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
   width: 80%;
 }
 
@@ -134,6 +138,6 @@
   }
 
   #youtube-video  {
-    height: 250px;  
+    height: 250px;
   }
 }

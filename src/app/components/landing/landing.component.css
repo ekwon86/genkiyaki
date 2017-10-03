@@ -7,7 +7,7 @@
 .overlay {
   height: 100%;
   width: 100%;
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(0,0,0,0.5);
 }
 
 .fire-video {
@@ -20,14 +20,22 @@
   height: auto;
   width: auto;
   transform: translate(-50%, -50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
   background-size: cover;
 }
 
 .banner-container {
   position: relative;
   top: 50%;
-  height: 500px;
-  transform: translate(0,-50%);
+  height: 650px;
+  transform: translate(0,-45%);
+  -ms-transform: translateY(-45%);
+  -webkit-transform: translateY(-45%);
+  -moz-transform: translateY(-45%);
+  -o-transform: translateY(-45%);
 }
 
 .sub-banner {
@@ -56,6 +64,10 @@
     position: relative;
     top: 50%;
     transform: translate(0,-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     height: 50%;
     width: 80%;
   }
@@ -77,6 +89,10 @@
     position: relative;
     top: 55%;
     transform: translate(0,-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     height: 50%;
     width: 50%;
   }

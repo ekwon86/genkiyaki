@@ -33,6 +33,10 @@
   top: 50%;
   left: 60px;
   transform: translate(0,-50%) rotate(2deg);
+  -ms-transform: translateY(-50%) rotate(2deg);
+  -webkit-transform: translateY(-50%) rotate(2deg);
+  -moz-transform: translateY(-50%) rotate(2deg);
+  -o-transform: translateY(-50%) rotate(2deg);
   z-index: 0;
 }
 
@@ -41,6 +45,10 @@
   top: 0;
   right: -35px;
   transform: rotate(-3deg);
+  -ms-transform:  rotate(-3deg);
+  -webkit-transform:  rotate(-3deg);
+  -moz-transform:  rotate(-3deg);
+  -o-transform:  rotate(-3deg);
   width: 225px;
   z-index: 1;
 }
@@ -52,6 +60,10 @@
   width: 235px;
   z-index: 2;
   transform: translate(0,-50%) rotate(10deg);
+  -ms-transform: translateY(-50%) rotate(10deg);
+  -webkit-transform: translateY(-50%) rotate(10deg);
+  -moz-transform: translateY(-50%) rotate(10deg);
+  -o-transform: translateY(-50%) rotate(10deg);
 }
 
 .pic-3 {
@@ -60,6 +72,10 @@
   right: 0;
   width: 225px;
   transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
 }
 
 @media only screen and (max-device-width: 480px) {
