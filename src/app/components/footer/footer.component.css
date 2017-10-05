@@ -62,6 +62,12 @@ p {
   color: rgba(255,255,255,0.9);
 }
 
+.eklogo {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
 @media (min-width:751px) {
   .mobile-footer {
     display: none;
@@ -108,8 +114,15 @@ p {
     font-size: 25px;
   }
   .copyright {
-    margin-top: 40px;
+    margin-top: 15px;
     font-size: 12px;
+  }
+  .eklogo {
+    .display: none;
+  }
+  .eklogo-mobile {
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -153,7 +166,15 @@ p {
     font-size: 25px;
   }
   .copyright {
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 12px;
+  }
+
+  .eklogo {
+    display: none;
+  }
+  .eklogo-mobile {
+    width: 30px;
+    height: 30px;
   }
 }

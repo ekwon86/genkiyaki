@@ -12,7 +12,7 @@ export class GalleryComponent implements OnInit {
     {url: '../../../assets/taco.jpg'},
     {url: '../../../assets/genkiinside.jpg'},
     {url: '../../../assets/fries.jpg'},
-    {url: '../../../assets/bowl1.JPG'},
+    {url: '../../../assets/chxbowl.jpg'},
     {url: '../../../assets/zombieboard.jpg'},
     {url: '../../../assets/chxplate.jpg'},
     {url: '../../../assets/taco3.jpg'},

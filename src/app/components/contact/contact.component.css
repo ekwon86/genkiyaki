@@ -10,6 +10,13 @@
   background-size: cover;
 }
 
+.coming-soon-banner {
+  position: absolute;
+  left: -19%;
+  top: 7%;
+  width: 200px;
+}
+
 .overlay {
   position: absolute;
   height: 100%;
@@ -186,6 +193,12 @@
   #map, #map2 {
     height: 200px;
   }
+  .coming-soon-banner {
+    position: absolute;
+    left: 48%;
+    z-index: 999;
+    top: -26%;
+  }
 }
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 750px) {
@@ -215,4 +228,12 @@
     margin-bottom: 35px;
     position: relative;
   }
+
+    .coming-soon-banner {
+      position: absolute;
+      left: 65%;
+      transform: rotate(45deg);
+      z-index: 999;
+      width: 200px;
+    }
 }
