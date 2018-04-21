@@ -10,43 +10,47 @@ export class MenuComponent implements OnInit {
 
   menu = {
     bowls: [
-      { entree: 'Chicken', regPrice: '4.99', lgPrice: '5.99', recommended: true },
-      { entree: 'Beef', regPrice: '6.49', lgPrice: '7.49', recommended: false },
-      { entree: 'Veggie', regPrice: '4.99', lgPrice: 'N/A', recommended: false },
-      { entree: 'Combo (Chicken and Beef)', regPrice: '6.49', lgPrice: '7.49', recommended: true },
-      { entree: 'D-Bowl', regPrice: 'N/A', lgPrice: '7.49', recommended: false },
-      { entree: 'Shrimp', regPrice: '6.49', lgPrice: 'N/A', recommended: false },
+      { entree: 'Chicken', regPrice: '5.99', lgPrice: '6.99', recommended: true },
+      { entree: 'Beef', regPrice: '7.49', lgPrice: '8.49', recommended: false },
+      { entree: 'Veggie', regPrice: '5.99', lgPrice: 'N/A', recommended: false },
+      { entree: 'Combo (Chicken and Beef)', regPrice: '7.49', lgPrice: '8.49', recommended: true },
+      { entree: 'D-Bowl', regPrice: 'N/A', lgPrice: '8.99', recommended: false },
+      { entree: 'Shrimp', regPrice: '6.99', lgPrice: 'N/A', recommended: false },
     ],
     plates: [
-      { entree: 'Chicken', salad: 'L 7.99', veggies: 'R 6.99 / L 7.99', description: '', recommended: false},
-      { entree: 'Beef', salad: 'L 8.99', veggies: 'R 7.99 / L 8.99', description: '', recommended: false},
-      { entree: 'Combo (Chicken and Beef)', salad: 'L 8.99', veggies: 'R 7.99 / L 8.99', description: '', recommended: false},
-      { entree: 'BBQ Ribs', salad: 'R 10.99', veggies: 'R 10.99', description: '', recommended: false },
+      { entree: 'Chicken', salad: 'L 8.99', veggies: 'R 7.99 / L 8.99', veggiesNoRice: 'R 6.99', description: '', recommended: false},
+      { entree: 'Beef', salad: 'L 9.49', veggies: 'R 8.49 / L 9.49', veggiesNoRice: 'R 7.99', description: '', recommended: false},
+      { entree: 'Combo (Chicken and Beef)', salad: 'L 9.49', veggies: 'R 8.49 / L 9.49', veggiesNoRice: 'R 7.99', description: '', recommended: false},
+      { entree: 'BBQ Ribs', salad: 'R 11.99', veggies: 'R 11.99', description: '', recommended: false },
       { entree: 'Ninja', salad: 'L 13.99', veggies: 'N/A', description: 'Beef, Chicken, Rib with Ninja Sauce', recommended: true }
     ],
     furious: [
-      { entree: 'Furious Chicken', regPrice: '6.99', lgPrice: '7.99', isSpicy: true },
-      { entree: 'Furious Ninja Dog', regPrice: '5.99', lgPrice: '', isSpicy: true }
+      { entree: 'Furious Chicken', regPrice: '7.99', lgPrice: '8.99', isSpicy: true },
+      { entree: 'Furious Ninja Dog', regPrice: '6.99', lgPrice: '', isSpicy: true }
     ],
     ninja: [
-      { entree: 'Ninja Fries', price: '5.99', recommended: true },
-      { entree: 'Ninja Nachos', price: '5.99', recommended: true },
       { entree: 'Ninja Cali Burrito', price: '7.99', recommended: false },
       { entree: 'Ninja "Chicken" Slam! (Quesadilla)', price: '5.99', recommended: false },
-      { entree: 'Ninja Taco (Mild)', price: '1.25', recommended: true }
+    ],
+    ninjaFriesNachos: [
+      { entree: 'Ninja Fries', chicken: 'CHICKEN  7.00', beef: 'BEEF  8.00', recommended: true },
+      { entree: 'Ninja Nachos',chicken: 'CHICKEN  7.00', beef: 'BEEF  8.00' , recommended: true },
     ],
     tacos: [
-      { entree: 'Ninja Taco (Mild)', price: '1.25', recommended: true, description: '', isSpicy: false, isDeath: false },
-      { entree: 'Epic Taco (Medium)', price: '1.50', recommended: false, description: '', isSpicy: true, isDeath: false},
-      { entree: 'Death Taco (Extreme)', price: '3.00', recommended: false, description: 'Dine-In Only / Limited Quantity', isSpicy: false, isDeath: true },
-      { entree: 'Shrimp Taco', price: '2.25', recommended: false , description: '', isSpicy: false, isDeath: false },
-      { entree: 'Beef Ribeye Taco', price: '2.00', recommended: false, description: '', isSpicy: false, isDeath: false }
+      { entree: 'Death Taco (Extreme)', price: '4.00', recommended: false, description: 'Dine-In Only / Limited Quantity', isSpicy: false, isDeath: true },
+      { entree: 'Shrimp Taco', price: '2.50', recommended: false , description: '', isSpicy: false, isDeath: false },
+      { entree: 'Ninja Beef Taco', price: '2.00', recommended: false, description: 'Make it "EPIC" for 25¢', isSpicy: true, isDeath: false },
+      { entree: 'Ninja Chicken Taco', price: '1.50', recommended: false, description: 'Make it "EPIC" for 25¢', isSpicy: true, isDeath: false },
+      { entree: 'Ninja Beef Taco (3) Set', price: '5.75', recommended: false, description: 'Make it "EPIC" for 25¢', isSpicy: true, isDeath: false },
+      { entree: 'Ninja Chicken Taco (3) Set', price: '4.25', recommended: false, description: 'Make it "EPIC" for 25¢', isSpicy: true, isDeath: false }
+
     ],
     soupAndSalad: [
-      { entree: 'Udon Soup (Soup Only)', price: '1.99', description: '' },
+      { entree: 'Udon Soup (Soup Only)', price: '2.00', description: '' },
       { entree: 'Udon Noodles (Soup and Noodles)', price: '5.99', description: '' },
       { entree: 'Garden Salad (Small Only)', price: '2.00', description: '' },
-      { entree: 'Chicken Salad', price: '6.99', description: 'Includes soy sauce vinaigrette dressing' }
+      { entree: 'Asian Chicken Salad', price: '6.99', description: '' },
+      { entree: 'Asian Beef Salad', price: '8.49', description: 'Includes soy sauce vinaigrette dressing' }
     ],
     extra: [
       { name: 'Chicken', price: '2.99' },
@@ -56,17 +60,14 @@ export class MenuComponent implements OnInit {
       { name: 'Veggies', price: '2.00' }
     ],
     sides: [
-      { name: 'Gyoza (6 Pieces)', price: '3.99', description: '' },
-      { name: 'Shrimp Tempura (5 Pieces)', price: '6.99', description: '' },
+      { name: 'Gyoza (6 Pieces)', price: '4.99', description: '' },
+      { name: 'Fried Shrimp (5 Pieces)', price: '6.99', description: '' },
       { name: 'Kimchee', price: '2.00', description: '' },
-      { name: 'Yakitori Chicken', price: '1.00', description: 'Sold Individually '}
+      { name: 'Cheese', price: '2.00', description: ''}
     ],
     drinks: [
-      { name: 'Regular', price: '1.59' },
-      { name: 'Large', price: '1.99' },
-      { name: 'Coconut', price: '2.00' },
-      { name: 'Snapple', price: '2.00' },
-      { name: 'Water', price: '1.00' }
+      { name: 'Regular Drink', price: '1.79' },
+      { name: 'Large Drink', price: '2.00' }
     ]
   };
 

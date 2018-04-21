@@ -20,6 +20,9 @@
             <p class="legend-text">Painful</p>
           </div>
         </div>
+        <div class="col-12 text-right">
+          <p class="legend-text">* * * Prices may vary depending on location</p>
+        </div>
       </div>
       <!-- MENU HEADING END -->
 
@@ -76,26 +79,32 @@
         <div class="col-12 menu-item-text-subcontainer" id="PlatesBody">
           <div class="menu-item-text">
             <div class="regular-large-text-container">
-              <div class="regular-large-empty-div"></div>
-              <div class="regular-large-text-subcontainer">
+              <div class="plates-regular-large-empty-div"></div>
+              <div class="plates-regular-large-text-subcontainer">
                 <p class="regular-large-text">Salad</p>
               </div>
-              <div class="regular-large-text-subcontainer">
+              <div class="plates-regular-large-text-subcontainer">
                 <p class="regular-large-text">Veggies</p>
+              </div>
+              <div class="plates-regular-large-text-subcontainer">
+                <p class="regular-large-text">Veggies No Rice</p>
               </div>
             </div>
             <div class="menu-item-row" *ngFor="let plate of menu.plates">
-              <div class="menu-item">
+              <div class="plates-menu-item">
                 <div class="food-item-text-pic-container">
                   <p class="food-text">{{ plate.entree }}<img src="../../../assets/ninja-shuriken-red.png" class="recommended-icon" *ngIf="plate.recommended"/></p><br>
                   <small class="food-description"><em>{{ plate.description }}</em></small>
                 </div>
               </div>
-              <div class="food-reg-lg-price-text-container">
+              <div class="plates-food-reg-lg-price-text-container">
                 <p class="food-reg-lg-price-text">{{ plate.salad }}</p>
               </div>
-              <div class="food-reg-lg-price-text-container">
+              <div class="plates-food-reg-lg-price-text-container">
                 <p class="food-reg-lg-price-text">{{ plate.veggies }}</p>
+              </div>
+              <div class="plates-food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ plate.veggiesNoRice }}</p>
               </div>
             </div>
           </div>
@@ -103,20 +112,47 @@
       </div>
       <!--PLATES END-->
 
-      <!--TACOS START-->
+      <!--NINJA START-->
       <div class="row menu-item-container">
-        <div class="col-6 menu-item-name-container menu-item-banner" (click)="tacosHeadingClicked()">
+        <div class="col-6 menu-item-name-container menu-item-banner" (click)="ninjaHeadingClicked()">
           <div class="menu-item-name-subcontainer">
-            <p class="menu-item-heading">[&nbsp;<i *ngIf="tacosOpen" class="fa fa-minus plus-minus-icons" aria-hidden="true"></i><i *ngIf="!tacosOpen" class="fa fa-plus plus-minus-icons" aria-hidden="true"></i>&nbsp;]&nbsp;Tacos</p>
+            <p class="menu-item-heading">[&nbsp;<i *ngIf="ninjaOpen" class="fa fa-minus plus-minus-icons" aria-hidden="true"></i><i *ngIf="!ninjaOpen" class="fa fa-plus plus-minus-icons" aria-hidden="true"></i>&nbsp;]&nbsp;Ninja</p>
           </div>
         </div>
-        <div class="col-6 menu-item-picture-container tacos-background-picture menu-item-banner" (click)="tacosHeadingClicked()"></div>
+        <div class="col-6 menu-item-picture-container ninja-background-picture menu-item-banner" (click)="ninjaHeadingClicked()"></div>
       </div>
       <div class="row menu-item-body">
-        <div class="col-12 menu-item-text-subcontainer" id="TacosBody">
+        <div class="col-12 menu-item-text-subcontainer" id="NinjaBody">
           <div class="menu-item-text">
             <div class="regular-large-text-container">
-              <div class="regular-large-empty-div"></div>
+              <div class="regular-large-empty-div">
+                <p class="category-description"><em>Comes with Beef, Chicken, Onions, Cilantro, Cheese, and Ninja Sauce</em></p>
+              </div>
+            </div>
+            <div class="menu-item-row" *ngFor="let ninja of menu.ninjaFriesNachos">
+              <div class="menu-item">
+                <div class="food-item-text-pic-container">
+                  <p class="food-text">{{ ninja.entree }}<img src="../../../assets/ninja-shuriken-red.png" class="recommended-icon" *ngIf="ninja.recommended"/></p>
+                </div>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ ninja.chicken }}</p>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ ninja.beef }}</p>
+              </div>
+            </div>
+            <div class="menu-item-row" *ngFor="let ninja of menu.ninja">
+              <div class="menu-item">
+                <div class="food-item-text-pic-container">
+                  <p class="food-text">{{ ninja.entree }}<img src="../../../assets/ninja-shuriken-red.png" class="recommended-icon" *ngIf="ninja.recommended"/></p>
+                </div>
+              </div>
+              <div class="food-reg-lg-price-text-container">
+              </div>
+              <div class="food-reg-lg-price-text-container">
+                <p class="food-reg-lg-price-text">{{ ninja.price }}</p>
+              </div>
             </div>
             <div class="menu-item-row" *ngFor="let taco of menu.tacos">
               <div class="menu-item">
@@ -140,40 +176,6 @@
               </div>
               <div class="food-reg-lg-price-text-container">
                 <p class="food-reg-lg-price-text">{{ taco.price }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--TACOS END-->
-
-      <!--NINJA START-->
-      <div class="row menu-item-container">
-        <div class="col-6 menu-item-name-container menu-item-banner" (click)="ninjaHeadingClicked()">
-          <div class="menu-item-name-subcontainer">
-            <p class="menu-item-heading">[&nbsp;<i *ngIf="ninjaOpen" class="fa fa-minus plus-minus-icons" aria-hidden="true"></i><i *ngIf="!ninjaOpen" class="fa fa-plus plus-minus-icons" aria-hidden="true"></i>&nbsp;]&nbsp;Ninja</p>
-          </div>
-        </div>
-        <div class="col-6 menu-item-picture-container ninja-background-picture menu-item-banner" (click)="ninjaHeadingClicked()"></div>
-      </div>
-      <div class="row menu-item-body">
-        <div class="col-12 menu-item-text-subcontainer" id="NinjaBody">
-          <div class="menu-item-text">
-            <div class="regular-large-text-container">
-              <div class="regular-large-empty-div">
-                <p class="category-description"><em>Comes with Beef, Chicken, Onions, Cilantro, Cheese, and Ninja Sauce</em></p>
-              </div>
-            </div>
-            <div class="menu-item-row" *ngFor="let ninja of menu.ninja">
-              <div class="menu-item">
-                <div class="food-item-text-pic-container">
-                  <p class="food-text">{{ ninja.entree }}<img src="../../../assets/ninja-shuriken-red.png" class="recommended-icon" *ngIf="ninja.recommended"/></p>
-                </div>
-              </div>
-              <div class="food-reg-lg-price-text-container">
-              </div>
-              <div class="food-reg-lg-price-text-container">
-                <p class="food-reg-lg-price-text">{{ ninja.price }}</p>
               </div>
             </div>
           </div>

@@ -217,9 +217,24 @@
   vertical-align: top;
 }
 
+.plates-regular-large-empty-div {
+  height: 100%;
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
 .regular-large-text-subcontainer {
   height: 100%;
   width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+
+.plates-regular-large-text-subcontainer {
+  height: 100%;
+  width: 20%;
   display: inline-block;
   vertical-align: top;
   text-align: right;
@@ -256,6 +271,20 @@
   vertical-align: top;
 }
 
+.ninja-menu-item {
+  height: 100%;
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.plates-menu-item {
+  height: 100%;
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
 .menu-item *{
   font-family: 'Roboto Slab', serif;
 }
@@ -287,6 +316,14 @@
 .food-reg-lg-price-text-container {
   height: 100%;
   width: 25%;
+  display: inline-block;
+  vertical-align: top;
+  text-align: right;
+}
+
+.plates-food-reg-lg-price-text-container {
+  height: 100%;
+  width: 20%;
   display: inline-block;
   vertical-align: top;
   text-align: right;
