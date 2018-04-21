@@ -195,8 +195,9 @@
   }
   .coming-soon-banner {
     position: absolute;
-    left: 48%;
+    left: 64%;
     z-index: 999;
+    width: 134px;
     top: -26%;
   }
 }
