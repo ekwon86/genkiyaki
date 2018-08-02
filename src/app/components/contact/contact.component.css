@@ -23,7 +23,7 @@
   width: 100%;
   left: 0;
   top: 0;
-  background-color: rgba(0,0,0,0.75);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .locations-heading {
@@ -63,7 +63,7 @@
 .address-city-heading {
   font-family: 'Stint Ultra Expanded', cursive;
   text-transform: uppercase;
-  color: rgb(252,25,25);
+  color: rgb(252, 25, 25);
   border-bottom: rgba(255, 255, 255, 0.14) 1px solid;
   font-weight: bold;
   padding-bottom: 8px;
@@ -81,10 +81,10 @@
   left: 0;
   height: 100%;
   width: 50%;
-  border-top: 1px rgba(0,0,0,0.2) solid;
-  border-left: 1px rgba(0,0,0,0.2) solid;
-  border-bottom: 1px rgba(0,0,0,0.2) solid;
-  border-right: 2px rgba(0,0,0,0.2) solid;
+  border-top: 1px rgba(0, 0, 0, 0.2) solid;
+  border-left: 1px rgba(0, 0, 0, 0.2) solid;
+  border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
+  border-right: 2px rgba(0, 0, 0, 0.2) solid;
 }
 
 #map2 {
@@ -93,9 +93,9 @@
   right: 0;
   height: 100%;
   width: 50%;
-  border-top: 1px rgba(0,0,0,0.2) solid;
-  border-bottom: 1px rgba(0,0,0,0.2) solid;
-  border-right: 1px rgba(0,0,0,0.2) solid;
+  border-top: 1px rgba(0, 0, 0, 0.2) solid;
+  border-bottom: 1px rgba(0, 0, 0, 0.2) solid;
+  border-right: 1px rgba(0, 0, 0, 0.2) solid;
 }
 
 .contact-heading {
@@ -142,7 +142,7 @@
 .contact-info:after {
   border-right: 403px solid transparent;
   border-top: 500px solid #292929;
-  content: "";
+  content: '';
   height: 100%;
   position: absolute;
   right: -403px;
@@ -152,7 +152,8 @@
 }
 
 .contact-icons {
-  font-size: 35px; color: White;
+  font-size: 35px;
+  color: White;
 }
 
 .contact-section-container {
@@ -169,7 +170,7 @@
 
 @media only screen and (max-device-width: 480px) {
   #Locations {
-    height: 775px;
+    height: auto;
     padding: 35px 15px;
   }
   .locations-heading {
@@ -190,7 +191,8 @@
   .address-container {
     text-align: left;
   }
-  #map, #map2 {
+  #map,
+  #map2 {
     height: 200px;
   }
   .coming-soon-banner {
@@ -204,6 +206,7 @@
 
 @media only screen and (min-device-width: 481px) and (max-device-width: 750px) {
   #Locations {
+    height: auto;
     padding: 35px 15px;
   }
 
@@ -220,7 +223,8 @@
   .address-city-heading {
     font-size: 20px;
   }
-  #map, #map2 {
+  #map,
+  #map2 {
     margin-top: 15px;
     height: 200px;
   }
@@ -230,11 +234,11 @@
     position: relative;
   }
 
-    .coming-soon-banner {
-      position: absolute;
-      left: 65%;
-      transform: rotate(45deg);
-      z-index: 999;
-      width: 200px;
-    }
+  .coming-soon-banner {
+    position: absolute;
+    left: 65%;
+    transform: rotate(45deg);
+    z-index: 999;
+    width: 200px;
+  }
 }
